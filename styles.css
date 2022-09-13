@@ -1,0 +1,1168 @@
+:root {
+  --main-color1: #313bac;
+  --small-text: #969696;
+}
+
+* {
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
+body {
+  margin: 0;
+  overflow: auto;
+}
+
+/************NAV BAR***************/
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 4500;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(162, 156, 156, 0.2);
+  overflow: hidden;
+}
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+.menu-img {
+  width: auto;
+  height: 40px;
+}
+.menu ul {
+  font-size: 12px;
+  font-weight: bold;
+  list-style: none;
+  margin-right: 30px;
+}
+.menu ul li {
+  color: var(--main-color1);
+  opacity: 0.4;
+  display: inline-block;
+  margin-right: 30px;
+}
+.menu a {
+  text-decoration-line: none;
+}
+
+.menu > ul > li:hover {
+  color: var(--main-color1);
+  opacity: 1;
+  cursor: pointer;
+}
+/***************PAGES*****************/
+
+.wrapper {
+  width: 100%;
+}
+
+#page-1,
+#page-2,
+#page-3,
+#page-4,
+#page-5,
+#page-6 {
+  padding: 30px 50px 20px 40px;
+  margin: 20px 0px 20px 0px;
+  border-radius: 6px 6px 0 0;
+  height: 800px;
+  position: relative;
+  overflow: hidden;
+}
+
+#page-1,
+#page-3,
+#page-5 {
+  background-color: #edf2f8;
+}
+#page-2,
+#page-4,
+#page-6 {
+  background-color: #fff;
+}
+
+/*Social media icons*/
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  bottom: 6%;
+  left: 2%;
+}
+
+.social-icons i {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: rgb(82, 81, 81);
+}
+.social-icons a {
+  text-decoration: none;
+}
+.social-icons i:hover {
+  background-color: var(--main-color1);
+  color: #fff;
+}
+
+/*Scroll dots*/
+
+.dots {
+  position: absolute;
+  right: 7%;
+  top: 40%;
+  z-index: 1;
+}
+.dots div {
+  display: flex;
+  flex-direction: row;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: grey;
+  margin: 17px;
+}
+.dots div:hover {
+  background-color: var(--main-color1);
+}
+
+/*All rights reserved*/
+
+.rights {
+  display: block;
+  justify-content: right;
+  position: absolute;
+  bottom: 6%;
+  right: 7%;
+}
+.rights p {
+  font-weight: bold;
+  text-align: right;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/***************PAGE-1******************/
+
+.transparent-woman {
+  width: 900px;
+  height: 750px;
+  position: absolute;
+  bottom: 0px;
+  right: 35%;
+  z-index: 1;
+}
+
+/*Circles*/
+
+.gradient-circles {
+  border-radius: 50%;
+  background: linear-gradient(110deg, #edf2f8, #cfd3d8);
+  position: absolute;
+}
+.one {
+  width: 600px;
+  height: 600px;
+  bottom: 10%;
+  right: 30%;
+}
+.two {
+  width: 60px;
+  height: 60px;
+  left: 10%;
+  bottom: 27%;
+}
+.three {
+  width: 100px;
+  height: 100px;
+  right: 20%;
+  bottom: -50px;
+}
+.four {
+  border-radius: 50%;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 18%;
+  bottom: 20%;
+  background-color: #b0b2d8;
+}
+
+/*Container Micael*/
+
+.container-Micael {
+  display: flex;
+  padding: 5px;
+  width: 17%;
+  background-color: #fff;
+  border-radius: 20px;
+  align-items: center;
+  position: absolute;
+  left: 18%;
+  top: 20%;
+  box-shadow: -1px 10px 5px 0px rgba(246, 247, 251, 1);
+}
+
+.container-Micael i {
+  padding: 10%;
+  color: coral;
+  opacity: 0.6;
+  font-size: 3em;
+  float: left;
+  rotate: 315deg;
+}
+
+.container-Micael p {
+  display: block;
+  width: 70%;
+  padding: 10px;
+  text-align: left;
+  float: left;
+  font-size: 12px;
+  color: var(--small-text);
+  line-height: 1.4;
+}
+.container-Micael span {
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+/*Container 3D*/
+
+.container-3D {
+  padding: 5px 10px 5px 20px;
+  width: 10%;
+  background-color: #fff;
+  border-radius: 20px;
+  position: absolute;
+  top: 40%;
+  left: 24%;
+  box-shadow: -1px 10px 5px 0px rgba(246, 247, 251, 1);
+}
+.container-3D p {
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/*Animation*/
+
+.animation {
+  position: absolute;
+  right: 28%;
+  top: 100px;
+}
+.animation-image {
+  border-radius: 50%;
+  width: 100px;
+  height: auto;
+}
+.animation h6 {
+  text-align: center;
+}
+
+/*Interaction*/
+
+.interaction {
+  position: absolute;
+  right: 17%;
+  top: 200px;
+}
+.interaction-image {
+  border-radius: 50%;
+  width: 160px;
+  height: auto;
+}
+.interaction h6 {
+  text-align: center;
+}
+
+/*Illustration*/
+
+.illustration {
+  position: absolute;
+  right: 22%;
+  bottom: 280px;
+}
+.illustration-image {
+  border-radius: 50%;
+  width: 80px;
+  height: auto;
+}
+.illustration h6 {
+  text-align: center;
+}
+
+/***************PAGE-2******************/
+
+.title-page2 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.title-page2 a {
+  color: var(--main-color1);
+}
+.content-page2 {
+  padding-top: 30px;
+  padding-left: 13%;
+}
+.animation-div,
+.illustration-div,
+.interaction-div {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: auto;
+  margin: 55px;
+  float: left;
+}
+.animation-div img,
+.illustration-div img,
+.interaction-div img {
+  width: 200px;
+  height: auto;
+  padding-bottom: 30px;
+  border-radius: 20px;
+}
+.animation-div p,
+.illustration-div p,
+.interaction-div p {
+  font-size: 12px;
+  color: #666770;
+  line-height: 1.6;
+}
+
+/***************PAGE-3******************/
+
+.main-pic {
+  width: 550px;
+  height: 370px;
+  border-radius: 20px;
+  display: block;
+  margin-left: 30%;
+  margin-top: 10%;
+  box-shadow: 78px 79px 400px -46px rgba(0, 0, 0, 0.75);
+}
+
+.side-pic1,
+.side-pic2 {
+  width: 400px;
+  height: 280px;
+  border-radius: 20px;
+  position: absolute;
+  opacity: 0.3;
+  top: 30%;
+}
+.side-pic1 {
+  left: -10em;
+  overflow: hidden;
+}
+.side-pic2 {
+  right: -10em;
+  overflow: hidden;
+}
+.all-cases {
+  position: absolute;
+  text-decoration: underline;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  left: 48%;
+  margin-left: -50px;
+  bottom: 5%;
+}
+.title-page3 {
+  position: absolute;
+  font-size: 100px;
+  font-weight: bold;
+  color: var(--main-color1);
+  bottom: 45%;
+  left: 28%;
+  margin-left: -50px;
+}
+
+/***************PAGE-4******************/
+
+.title-page4 {
+  text-align: center;
+  margin: 50px auto 100px auto;
+}
+
+/*LEFT GRID*/
+
+.left-side {
+  width: 30%;
+  height: auto;
+  display: inline-grid;
+  grid: auto / auto auto auto;
+  grid-gap: 15px;
+  margin-left: 13%;
+}
+.left-side img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/*RIGHT GRID*/
+
+.right-side {
+  width: 30%;
+  height: auto;
+  display: inline-grid;
+  grid: auto / auto auto;
+  grid-gap: 5px;
+  margin-right: 18%;
+  margin-bottom: 20%;
+  float: right;
+}
+.year {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--main-color1);
+}
+.right-side h4 {
+  margin: 0;
+}
+.right-side h4:hover {
+  color: var(--main-color1);
+}
+.right-side p {
+  font-size: 10px;
+  font-weight: bold;
+  color: var(--small-text);
+  line-height: 2.5;
+}
+/*HOVER ELEMENT*/
+.only-hover {
+  display: none;
+  background-color: #fff;
+  width: 180px;
+  padding: 20px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--small-text);
+  position: absolute;
+  right: 13%;
+  bottom: 56%;
+  border-radius: 20px;
+}
+
+.hovering:hover + .only-hover {
+  display: block;
+  box-shadow: 53px 58px 35px -15px rgba(232, 231, 237, 1);
+}
+
+/***************PAGE-5******************/
+
+.richard {
+  background-color: white;
+  justify-content: center;
+  width: 700px;
+  height: 230px;
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 7%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 50px 150px rgba(0, 0, 0, 0.1), 0 30px 100px rgba(0, 0, 0, 0.1);
+}
+.richard img {
+  border-radius: 50%;
+  float: left;
+  margin: 20px;
+}
+.main-p {
+  font-size: 25px;
+  line-height: 1.6;
+}
+.richard h5 {
+  margin: 0;
+  color: var(--main-color1);
+}
+.side-p {
+  font-size: 10px;
+  color: var(--small-text);
+}
+.side-p a {
+  color: lightblue;
+}
+.logos-1,
+.logos-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  margin-left: 47%;
+  margin-top: 5%;
+  gap: 100px;
+}
+.logos-1 img,
+.logos-2 img {
+  opacity: 0.3;
+}
+.logos-1 img:hover,
+.logos-2 img:hover {
+  opacity: 0.8;
+}
+
+/***************PAGE-6******************/
+
+.title-page6 {
+  text-align: center;
+  margin: 60px;
+}
+
+.pink,
+.blue {
+  display: flex;
+  width: 20%;
+  padding: 2px 10px 2px 10px;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.pink {
+  background-color: #fef4f5;
+  margin-right: 5em;
+  margin-left: 26%;
+}
+.blue {
+  background-color: #f2f7fb;
+}
+.pink i,
+.blue i {
+  padding: 8%;
+  color: pink;
+  font-size: 2em;
+  float: left;
+}
+
+/*FORMS*/
+form {
+  display: grid;
+  grid: auto/auto auto auto;
+  width: 750px;
+  height: auto;
+  margin-left: 26%;
+  padding-top: 5em;
+}
+form div {
+  padding-right: 35px;
+}
+form input,
+form textarea,
+form select {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+label {
+  font-size: 10px;
+  color: var(--small-text);
+}
+form .message {
+  grid-column: 1/4;
+  margin-top: 1.5em;
+}
+form .submit-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1/4;
+  margin-top: 4em;
+}
+#submit {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #313bac;
+  outline: none;
+  color: var(--main-color1);
+  font-weight: bold;
+  width: 120px;
+}
+
+/******************************RESPONSIVE*************************************/
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+/******************************** MOBILE ************************************/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  nav {
+    display: none;
+  }
+  .social-icons {
+    z-index: 4000;
+  }
+  #page-2,
+  #page-3,
+  #page-4,
+  #page-5,
+  #page-6 {
+    padding: 30px 20px 20px 20px;
+  }
+  /** PAGE-1 **/
+
+  .transparent-woman,
+  .container-3D,
+  .container-Micael i {
+    display: none;
+  }
+  .container-Micael {
+    top: unset;
+    display: unset;
+    width: unset;
+    left: 50%;
+  }
+  .two {
+    top: 5%;
+  }
+  .four {
+    top: 10%;
+    left: 35%;
+  }
+  .animation {
+    right: 50%;
+    top: 200px;
+  }
+
+  .interaction {
+    right: 25%;
+    top: 370px;
+  }
+
+  .illustration {
+    right: 50%;
+    bottom: 70px;
+  }
+
+  /** PAGE-2 **/
+
+  #page-2 {
+    height: 100%;
+  }
+  .content-page2 {
+    align-content: center;
+  }
+
+  .animation-div,
+  .illustration-div,
+  .interaction-div {
+    align-items: center;
+    justify-content: center;
+    text-align: left !important;
+    width: unset;
+    height: unset;
+    margin: unset;
+  }
+  .animation-div p,
+  .illustration-div p,
+  .interaction-div p {
+    font-size: 16px;
+  }
+  .animation-div img,
+  .illustration-div img,
+  .interaction-div img {
+    width: 200px;
+  }
+
+  /** PAGE-3 **/
+
+  .title-page3 {
+    font-size: 40px;
+    padding: 4.5em 0;
+    left: 11%;
+    margin-left: unset;
+    margin: auto;
+    text-align: center;
+  }
+  .side-pic1,
+  .side-pic2 {
+    display: none;
+  }
+  .main-pic {
+    margin: 40% auto auto auto;
+    width: 100%;
+    height: unset;
+  }
+  .all-cases {
+    position: unset;
+    text-align: center;
+    margin-left: unset;
+    padding-top: 2em;
+  }
+  /** PAGE-4 **/
+
+  .left-side {
+    display: none;
+  }
+  .right-side {
+    display: unset;
+    width: unset;
+    text-align: center;
+  }
+
+  /** PAGE-5 **/
+
+  .richard {
+    display: inline-block;
+    width: unset;
+    height: unset;
+    margin-top: 30%;
+    margin-bottom: 15%;
+  }
+  .main-p {
+    float: left;
+    font-size: 15px;
+  }
+  .richard img {
+    float: right;
+    margin: unset;
+    width: 60px;
+  }
+  .logos-1,
+  .logos-2 {
+    margin-left: auto;
+    margin-right: auto;
+    gap: 40px;
+    width: 50px;
+    height: 50px;
+  }
+  /** PAGE-6 **/
+
+  .pink {
+    margin-right: unset;
+    margin-left: unset;
+  }
+  .pink,
+  .blue {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  form {
+    display: block;
+    width: 100%;
+    margin-left: unset;
+  }
+}
+
+/******************************** iPods, Tablets ************************************/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .social-icons {
+    z-index: 4000;
+  }
+  #page-2,
+  #page-3,
+  #page-4,
+  #page-5,
+  #page-6 {
+    padding: 30px 20px 20px 20px;
+  }
+  /** PAGE-1 **/
+
+  .transparent-woman,
+  .container-3D,
+  .container-Micael i {
+    display: none;
+  }
+  .container-Micael {
+    top: unset;
+    display: unset;
+    width: unset;
+    left: 50%;
+  }
+  .two {
+    top: 5%;
+  }
+  .four {
+    top: 10%;
+    left: 35%;
+  }
+  .animation {
+    right: 50%;
+    top: 200px;
+  }
+
+  .interaction {
+    right: 25%;
+    top: 370px;
+  }
+
+  .illustration {
+    right: 50%;
+    bottom: 70px;
+  }
+
+  /** PAGE-2 **/
+
+  #page-2 {
+    height: 100%;
+  }
+  .content-page2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .animation-div,
+  .illustration-div,
+  .interaction-div {
+    text-align: left !important;
+    width: unset;
+    height: unset;
+    margin: unset;
+  }
+  .animation-div p,
+  .illustration-div p,
+  .interaction-div p {
+    font-size: 16px;
+  }
+  .animation-div img,
+  .illustration-div img,
+  .interaction-div img {
+    width: 200px;
+  }
+
+  /** PAGE-3 **/
+
+  .title-page3 {
+    font-size: 40px;
+    padding: 3em 0;
+    left: 20%;
+    margin-left: unset;
+    margin: auto;
+    text-align: center;
+  }
+  .side-pic1,
+  .side-pic2 {
+    display: none;
+  }
+  .main-pic {
+    margin: 40% auto auto auto;
+    width: 100%;
+    height: unset;
+  }
+  .all-cases {
+    position: unset;
+    text-align: center;
+    margin-left: unset;
+    padding-top: 2em;
+  }
+  /** PAGE-4 **/
+
+  .left-side {
+    display: none;
+  }
+  .right-side {
+    display: unset;
+    width: unset;
+    text-align: center;
+    float: unset;
+  }
+
+  /** PAGE-5 **/
+
+  .richard {
+    display: inline-block;
+    width: 100%;
+    height: unset;
+    margin-top: 30%;
+    margin-bottom: 15%;
+    padding: unset;
+  }
+  .main-p {
+    float: left;
+    font-size: 17px;
+  }
+  .richard img {
+    float: left;
+    width: 60px;
+  }
+  .richard h5,
+  .richard .side-p {
+    margin-left: 23%;
+  }
+  .logos-1,
+  .logos-2 {
+    margin-left: auto;
+    margin-right: auto;
+    gap: 50px;
+    width: 70px;
+    height: 70px;
+  }
+  /** PAGE-6 **/
+
+  .pink {
+    margin-right: unset;
+    margin-left: unset;
+  }
+  .pink,
+  .blue {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  form {
+    display: block;
+    width: 100%;
+    margin-left: unset;
+  }
+}
+/******************************** Small screens, laptops ************************************/
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .social-icons,
+  .dots {
+    z-index: 4000;
+  }
+  #page-2,
+  #page-3,
+  #page-4,
+  #page-5,
+  #page-6 {
+    padding: 30px 20px 20px 20px;
+  }
+  /** PAGE-1 **/
+  .transparent-woman {
+    right: 2%;
+  }
+  .container-3D,
+  .container-Micael {
+    display: none;
+  }
+
+  .two {
+    top: 5%;
+  }
+  .four {
+    top: 10%;
+    left: 35%;
+    padding: 0;
+  }
+  .animation {
+    right: 80%;
+    top: 200px;
+  }
+
+  .interaction {
+    right: 62%;
+    top: 370px;
+  }
+
+  .illustration {
+    right: 60%;
+    bottom: 34em;
+  }
+
+  /** PAGE-2 **/
+
+  .animation-div img,
+  .illustration-div img,
+  .interaction-div img {
+    width: 150px;
+  }
+  .animation-div,
+  .illustration-div,
+  .interaction-div {
+    width: unset;
+    margin: 10px;
+  }
+
+  /** PAGE-3 **/
+
+  .title-page3 {
+    font-size: 5em;
+    padding: unset;
+    left: 10%;
+    margin-left: unset;
+    margin: auto;
+    text-align: center;
+  }
+  .side-pic1,
+  .side-pic2 {
+    display: none;
+  }
+  .main-pic {
+    margin: 8em auto auto auto;
+    width: 100%;
+    height: unset;
+  }
+  .all-cases {
+    position: unset;
+    text-align: center;
+    margin-left: unset;
+    padding-top: 2em;
+  }
+  /** PAGE-4 **/
+
+  .left-side {
+    display: none;
+  }
+  .right-side {
+    display: unset;
+    width: unset;
+    text-align: center;
+    float: unset;
+  }
+
+  /** PAGE-5 **/
+
+  .richard {
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+    height: unset;
+    margin-top: 10em;
+    margin-bottom: 15%;
+  }
+
+  /** PAGE-6 **/
+
+  .pink,
+  .blue {
+    width: 60%;
+    padding: 0;
+    margin-bottom: 20px;
+    float: unset;
+    margin-left: 7.5em;
+  }
+  form {
+    display: block;
+    width: 100%;
+    margin-left: unset;
+  }
+}
+/******************************** Desktops, large screens ***********************************/
+/** @media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .transparent-woman {
+    right: 23%;
+  }
+  .container-Micael {
+    width: 15em;
+    left: unset;
+  }
+  .container-3D {
+    width: unset;
+    left: 20%;
+  }
+  .animation {
+    right: 25%;
+  }
+  .interaction {
+    right: 10%;
+  }
+
+  .illustration {
+    right: 18%;
+  }
+
+  .animation-div,
+  .illustration-div,
+  .interaction-div {
+    width: unset;
+    margin: 20px;
+  }
+
+
+  .main-pic {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .side-pic1,
+  .side-pic2 {
+    display: none;
+  }
+  .title-page3 {
+    left: 20%;
+  }
+
+  .pink {
+    margin-left: 15%;
+  }
+  .pink,
+  .blue {
+    width: 30%;
+  }
+  form {
+    margin-left: 17%;
+  }
+
+/******************************** Extra large screens, TV ************************************/
+/* @media only screen and (min-width: 1201px) {
+  
+
+  .transparent-woman {
+    right: 25%;
+  }
+  .container-Micael {
+    width: 15em;
+    left: unset;
+  }
+  .container-3D {
+    width: unset;
+    left: 20%;
+  }
+  
+  .content-page2 {
+    padding-left: 10%;
+  }
+
+  
+  .side-pic1 {
+    left: -10em;
+  }
+  .side-pic2 {
+    right: -10em;
+  }
+  .main-pic {
+    width: unset;
+    margin: 10em auto;
+  }
+  .title-page3 {
+    text-align: center;
+    margin-top: 10em auto;
+    left: 23%;
+  }
+
+  .pink {
+    margin-left: 15%;
+  }
+  .pink,
+  .blue {
+    width: 30%;
+  }
+  form {
+    margin-left: 17%;
+  }
+}
+*/
